@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Residencial Mx | Arquitectura y Diseño</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="ar-logo">AR</span>
+            <span class="logo-text">Atelier Residencial Mx</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#cotizacion">Cotización</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1>Arquitectura a tu Medida</h1>
+            <p>Construcción y remodelación de espacios. Tu visión en manos expertas.</p>
+            <a href="#cotizacion" class="btn">Solicitar Cotización</a>
+        </div>
+    </header>
+
+    <!-- Nosotros / Filosofía -->
+    <section id="nosotros" class="about">
+        <div class="about-container">
+            <div class="about-image reveal">
+                <!-- Imagen de arquitectura de apoyo -->
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Detalle arquitectónico">
+            </div>
+            <div class="about-text reveal">
+                <h2>Más de 15 años transformando ideas.</h2>
+                <p>En Atelier Residencial Mx, somos constructores de patios, plataformas y espacios excepcionales.
+                    Haciendo de cada proyecto una estructura única, fusionamos la estética minimalista con la
+                    funcionalidad absoluta.</p>
+
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <span>Años de Experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <span>Proyectos Personalizados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title reveal">Nuestro Portafolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Residencia 1">
+                    <div class="item-overlay">
+                        <h3>Estructuras Exteriores</h3>
+                        <p>Diseño de plataformas y patios</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Residencia 2">
+                    <div class="item-overlay">
+                        <h3>Interiores Modernos</h3>
+                        <p>Remodelación integral</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Residencia 3">
+                    <div class="item-overlay">
+                        <h3>Fachadas</h3>
+                        <p>Líneas limpias y contrastes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotización -->
+    <section id="cotizacion" class="contact">
+        <div class="contact-container reveal">
+            <h2>Inicia tu Proyecto</h2>
+            <p>Estructuramos tu idea. Déjanos tus datos y un experto se comunicará contigo.</p>
+
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="text" id="nombre" required placeholder=" ">
+                        <label for="nombre">Nombre Completo</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="telefono" required placeholder=" ">
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                </div>
+
+                <div class="input-group select-group">
+                    <select id="servicio" required>
+                        <option value="" disabled selected></option>
+                        <option value="patios">Construcción de Patios / Plataformas</option>
+                        <option value="remodelacion">Remodelación de Espacios</option>
+                        <option value="diseno">Diseño Arquitectónico</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <label for="servicio">Servicio de Interés</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="mensaje" rows="3" required placeholder=" "></textarea>
+                    <label for="mensaje">Háblanos un poco de tu visión...</label>
+                </div>
+
+                <button type="submit" class="btn btn-dark">Solicitar Cotización</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="ar-logo">AR</span>
+                    <span class="logo-text">Atelier Residencial Mx</span>
+                </div>
+                <p>Construcción y remodelación de espacios a tu medida.</p>
+            </div>
+            <div class="footer-info">
+                <h4>Contacto</h4>
+                <p>📞 81 8280 0022</p>
+                <p>Monterrey, N.L. México</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atelier Residencial Mx. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
